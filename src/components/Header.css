@@ -1,0 +1,46 @@
+.background {
+  background-color: #505050;
+  height: 350px;
+}
+.makeFlex {
+  display: flex;
+  flex-direction: column;
+}
+.makeCentre {
+  align-items: center;
+  justify-content: center;
+}
+.linkSpacing {
+  margin: 5px 5px;
+  border-radius: 2px;
+}
+.rightEnd {
+  align-items: flex-end;
+}
+
+.removePre {
+  all: unset;
+}
+
+.white-font {
+  color: #ffffff;
+}
+.leftEnd {
+  align-items: flex-start;
+}
+/* button:hover {
+  cursor: pointer;
+} */
+.removePre:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.break {
+  height: 20px;
+}
+.marginLeft {
+  margin-left: 20px;
+}
+.marginTop {
+  margin-top: 20px;
+}
