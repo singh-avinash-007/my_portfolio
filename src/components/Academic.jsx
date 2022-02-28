@@ -37,6 +37,13 @@ export default function Academic() {
               Basic Sciences by Department of Science and Technology, India
             </Typography>
           </li>
+          <li>
+            <Typography sx={{ fontSize: 15 }} color="text.primary" gutterBottom>
+              Secured a state Rank of 193 out of 1.2 lakh candidates who
+              appeared for West Bengal Joint Entrance Examination in the year
+              2018
+            </Typography>
+          </li>
         </ul>
       </CardContent>
     </Card>

@@ -1,5 +1,21 @@
 const projects = [
   {
+    title: " Amazon Clone ",
+    date: "Dec - Feb 2021",
+    descriptionList: [
+      "Built a single-page clone of the amazon website with multiple routes supporting features like User authentication and other functions",
+      "Handled authentication and various other backend processes using Google firebase, also deployed the application online using firebase",
+    ],
+    technologies: [
+      "React Js",
+      "React-router-dom",
+      "Google-firebase",
+      "HTML",
+      "CSS",
+    ],
+    link: "https://github.com/singh-avinash-007/amazon-clone",
+  },
+  {
     title: " Big Integer Library ",
     date: "April - June 2020",
     descriptionList: [
@@ -40,6 +56,15 @@ const projects = [
     ],
     technologies: ["React Js", "Material UI", "Third-Party API"],
     link: "https://github.com/singh-avinash-007/covid-tracker",
+  },
+  {
+    title: "Simon Game",
+    date: "March 2021",
+    descriptionList: [
+      "A game based on remembering pattern built using Vanilla Javascript and using eventListeners to detect clicks and keypress",
+    ],
+    technologies: ["Javascript", "HTML", "CSS"],
+    link: "https://github.com/singh-avinash-007/simon-game",
   },
 ];
 export default projects;

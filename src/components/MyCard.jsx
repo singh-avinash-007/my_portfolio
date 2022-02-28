@@ -1,4 +1,4 @@
-import { Stack, Paper, CardHeader, Chip } from "@mui/material";
+import { Stack, Paper, CardHeader, Chip, CardContent } from "@mui/material";
 import { height } from "@mui/system";
 import "./MyCard.css";
 import Avatar from "@mui/material/Avatar";
@@ -15,7 +15,7 @@ export default function MyCard({ project, index, len }) {
             margin: "10px",
             padding: "5px",
             borderRadius: "10px",
-            minHeight: "280px",
+            minHeight: "320px",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
@@ -28,6 +28,17 @@ export default function MyCard({ project, index, len }) {
 
           {/* <div style={{ height: "10px", backgroundColor: "#505050" }}></div> */}
           <CardHeader title={title} subheader={date} />
+          <CardContent>
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+              {technologies.map((lang) => {
+                return (
+                  <div style={{ marginRight: "1px", marginBottom: "1px" }}>
+                    <Chip key={lang} label={lang} size="small" />
+                  </div>
+                );
+              })}
+            </div>
+          </CardContent>
           <ul style={{ color: "#505050" }}>
             {descriptionList.map((item) => {
               return (
@@ -37,13 +48,6 @@ export default function MyCard({ project, index, len }) {
               );
             })}
           </ul>
-          <Stack direction="row" spacing={0.5}>
-            {technologies.map((lang) => {
-              return (
-                <Chip key={lang} label={lang} color="primary" size="small" />
-              );
-            })}
-          </Stack>
           {/* <div style={{ height: "5px" }}></div> */}
         </Paper>
       </a>

@@ -20,6 +20,8 @@
 
 .removePre {
   all: unset;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .white-font {
@@ -43,4 +45,23 @@
 }
 .marginTop {
   margin-top: 20px;
+}
+.describe {
+  /* width: 100%; */
+  display: flex;
+  /* background-color: red; */
+  /* justify-content: space-between; */
+}
+@media (max-width: 720px) {
+  .describe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .removePre {
+    margin: 1px 1px;
+  }
+  .background {
+    height: 450px;
+  }
 }
